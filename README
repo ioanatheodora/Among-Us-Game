@@ -1,0 +1,51 @@
+//POPA IOANA-THEODORA
+//315CD
+
+    Tema4- Pregatire Examen
+
+Task1:
+    Se construieste matricea deja inversata, aceasta avand elementele de forma
+(n-j)i, unde n este numarul de elemente ale matricei.
+
+Task2:
+    Se extrage fiecare numar delimitat de "_" si se updateaza suma la fiecare pas
+
+Task 3:
+    In functie de primul numar al vectorului primit ca parametru, vom face urmatoarelee
+actiuni: daca este par, parcurgem vectorul interschimband elementele de pe 
+pozitia i si cele de pe pozitia i+1; daca n este impar, parcurgem vectorul pana 
+la jumatatea lui si interschimbam elementele de pe pozitia i si cele de pe pozitia
+n - i + 1, unde n este numarul de elemenete ale vectorului
+
+Task 4:
+    Alocam memorie in functia allocPlayer pentru pointerii ptr, ptr-> name,
+ptr -> color, ptr -> hat, modificam campul de alive in 1 si intoarcem pointerul
+ptr.
+    In functia allocGame, alocam memorie pentru pointerii ptr si ptr -> name, 
+intorcand pointerul ptr.
+
+Task 5:
+    In functia ReadPlayer, alocam memorie pointerului prin functia allocPlayer, citim
+campurile name, color, hat, numberOfLocations. Alocam memorie pentru pointerul 
+ptr -> Locations si citim locatiile. Citim rolul jucatorului si completam campurile
+referitoare la acesta.
+    In functia ReadGame, alocam memorie pointerului ptr si citim campurile name, 
+killRange, numberOfCrewmates; alocam memorie pentru ptr -> crewmates si citim datele 
+despre jucatori, inclusiv impostor cu functia ReadPlayer.
+
+Task 6:
+    Am scris functiile WritePlayer, WriteGame in fisier cu formatul dat in cerinta
+
+Task 7:
+    Parcurgem vectorul de crewmates, calculam la fiecare pas la ce distanta se afla crewmate-ul 
+de impostor si aflam distanta minima dintre crewmates si impostor si retinem si pozitia.
+Daca distanta minima este mai mica decat killRange, atunci impostorul poate sa omoare
+crewmate ul de pe pozitia retinuta anterior si egalam campul de alive cu 0. In caz
+contrar transmitem un mesaj corespunzator.
+
+Task 8:
+    Calculam pentru fiecare crewmate, cat si pentru impostor, indexul locatiei,
+afisam pozitia in care a mers si rezultatul task-ului pe care il are de facut.
+
+Task 9:
+    Eliberam memoria pentru structurile de tip Player si Game.
